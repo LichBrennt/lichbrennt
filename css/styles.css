@@ -10260,11 +10260,11 @@ form .row:first-child .floating-label-form-group {
 .copyright {
   background-color: #3b3c3c;
 }
-.skill-section .progress_bar{
+/*.skill-section .progress_bar{
   background-color: #838484;
   border-radius: 10px;
   height: 15px;
-}
+}*/
 .skill-section img{
   filter: grayscale(70%);
   width: 100px;
