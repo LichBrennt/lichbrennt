@@ -10142,6 +10142,7 @@ h3 {
   font-size: 1.25rem;
 }
 .masthead .masthead-avatar {
+  filter: grayscale(80%);
   width: 15rem;
 }
 
@@ -10160,6 +10161,7 @@ h3 {
 }
 .portfolio .portfolio-item {
   cursor: pointer;
+  filter: grayscale(80%);
   position: relative;
   display: block;
   max-width: 25rem;
@@ -10256,7 +10258,7 @@ form .row:first-child .floating-label-form-group {
 }
 
 .copyright {
-  background-color: #1a252f;
+  background-color: #3b3c3c;
 }
 .skill-section .progress_bar{
   background-color: #838484;
