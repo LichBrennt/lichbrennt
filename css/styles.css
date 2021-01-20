@@ -10259,11 +10259,12 @@ form .row:first-child .floating-label-form-group {
   background-color: #1a252f;
 }
 .skill-section .progress_bar{
-  background-color: #A248F0;
+  background-color: #838484;
   border-radius: 10px;
   height: 15px;
 }
 .skill-section img{
+  filter: grayscale(70%);
   width: 100px;
 }
 @media(min-width: 576){
