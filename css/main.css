@@ -1,0 +1,180 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Libre+Franklin&family=Source+Code+Pro&display=swap');
+
+/* variables */
+:root {
+    --Code: font-family: 'Source Code Pro', monospace;
+    --Anton: font-family: 'Anton', sans-serif;
+    --Libre: font-family: 'Libre Franklin', sans-serif;
+    /* colors */
+    --Skobeloff: #ff9017;
+    --WhiteBoneLight: #fffeee;
+    --Dark: #07090a;
+}
+
+/* *-*--*-* */
+* {
+    transition: all .7s ease-in;
+}
+
+p {
+    color: var(--WhiteBoneLight);
+    font-family: var(--Libre);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--WhiteBoneLight);
+    font-family: var(--Anton);
+    font-weight: bolder;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4em;
+    background: rgba(255, 144, 23, 0.6);
+}
+
+/* Header */
+header {
+    min-height: 80vh;
+    background: linear-gradient(360deg, var(--Dark) 10%, rgba(0, 0, 0, 0.5) 30%);
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    background: url('../assets/img/BACK_1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+header .navbar {
+    min-height: 6em;
+    padding: 0 2em;
+}
+
+header .navbar-brand {
+    color: white;
+    font-family: var(--Code);
+    font-weight: bold;
+}
+
+header .nav-item {
+    padding: 0 2vmin;
+}
+
+header .nav-link {
+    padding: 3vmin;
+    color: white;
+}
+
+header .btn-cv {
+    padding: 6px;
+    text-decoration: none;
+    color: white;
+    background: var(--BarnRed);
+    border: 1px solid var(--Skobeloff);
+}
+
+header img {
+    width: 70%;
+    border-radius: 15%;
+}
+
+header i {
+    color: var(--Skobeloff);
+}
+
+/* secciones */
+
+main section i {
+    color: var(--Skobeloff);
+}
+
+main section {
+    padding: 0 10vmin;
+    background: var(--Dark);
+}
+
+main section:first-child {
+    background: linear-gradient(var(--Dark)4%, var(--Dark)16%);
+}
+
+main section h2 {
+    padding: 1em 0;
+}
+
+main section h2::before {
+    content: '';
+    position: absolute;
+    transform: translateY(-20%) translateX(-20%);
+    width: 4%;
+    height: 4%;
+    border-top: 2px solid var(--Skobeloff);
+    border-left: 2px solid var(--Skobeloff);
+}
+
+main section h2::after {
+    content: '';
+    position: absolute;
+    transform: translateY(70%) translateX(-70%);
+    width: 4%;
+    height: 4%;
+    border-bottom: 2px solid var(--Skobeloff);
+    border-right: 2px solid var(--Skobeloff);
+}
+
+main section img {
+    width: 80%;
+    background: radial-gradient(circle, var(--Skobeloff));
+}
+
+main .container {
+    padding: 8vmin 0;
+}
+
+main section .container p {
+    padding-bottom: 3vmin;
+}
+
+main section .container a {
+    color: var(--Skobeloff);
+    text-decoration: none;
+    padding: 2vmin 1.5vmin;
+    border: 2px solid var(--Skobeloff);
+    border-radius: 12px;
+}
+
+main section .container a:hover {
+    box-shadow: 0 0 10px var(--Skobeloff);
+}
+
+/* footer */
+
+footer {
+    border-top: 3px solid var(--Skobeloff);
+    min-height: 6em;
+    background: var(--Dark);
+}
+
+footer p {
+    line-height: 5em;
+}
+
+footer span {
+    font-weight: bolder;
+    color: var(--Skobeloff);
+}

@@ -1,0 +1,6 @@
+@media only screen and (max-width: 769px) {
+    .sticky {
+        position: initial;
+        background: rgba(255, 144, 23, 0.6);
+    }
+}
